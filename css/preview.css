@@ -1,0 +1,39 @@
+@keyframes bg-pan-bottom {
+  0% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F3diS8%2FbtrH1BELS7c%2FSPFy1tkySN6yFeFmq6Dfu0%2Fimg.png");
+  animation: bg-pan-bottom 8s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.767);
+  opacity: 0.8;
+}
+.preview--title {
+  font-size: 100px;
+}
+.preview--content {
+  height: 50px;
+  width: 150px;
+  border: 5px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preview--content a {
+  font-size: 50px;
+}
+.preview__footer {
+  position: absolute;
+  bottom: 10px;
+}
